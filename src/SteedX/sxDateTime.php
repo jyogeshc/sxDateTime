@@ -50,6 +50,11 @@ class sxDateTime extends DateTime
         parent::__construct($time, $timeZone);
     }
 
+    public function test()
+    {
+      echo "This is test 1 and the change that is there for clone";
+    }
+
 
     /**
      * Get instance for the current date and time.
