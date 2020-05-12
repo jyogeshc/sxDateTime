@@ -4,6 +4,7 @@
 * @package sxDateTime
 *
 * PHP API to manage DateTime
+Test for the new branch
 */
 
 
@@ -53,6 +54,7 @@ class sxDateTime extends DateTime
     public function test()
     {
       echo "This is test 1 and the change that is there for clone";
+      echo "We can add the new line othe file ";
     }
 
 
@@ -135,6 +137,7 @@ class sxDateTime extends DateTime
         {
             $tz = new DateTimeZone(self::DEFAULT_TIME_ZONE);
             $dt->setTimezone($tz);
+            echo "We need to clear some confusion about GIT and Git patch Commit";
             return $dt;
         }
         return $dt;
@@ -162,7 +165,7 @@ class sxDateTime extends DateTime
 
         $startTime = strtotime($startDateTime->format('Y-m-d H:i:s'));
         $endTime = strtotime($endDateTime->format('Y-m-d H:i:s'));
-
+        echo "OK we are working on this to code and other";
 
         $workday = 0;
         $sunday = 0;
