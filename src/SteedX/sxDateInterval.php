@@ -20,6 +20,7 @@ class sxDateInterval extends \DateInterval
     public function __construct($interval)
     {
         $this->dateInterval = $interval;
+        echo "File 2 pathc 1"
 
     }
 
@@ -51,6 +52,7 @@ class sxDateInterval extends \DateInterval
      */
     public function getMonth()
     {
+        //New Patch of new branch
         return $this->dateInterval->format('%m');
     }
 
