@@ -178,6 +178,7 @@ class sxDateTime extends DateTime
             if ($day == self::SATURDAY)
             {
                 $saturday++;
+                $ctr++; //New Change
             }
 
             if ($day != self::SUNDAY &&
@@ -191,4 +192,10 @@ class sxDateTime extends DateTime
         $ret = ['workday'=>$workday,'saturday'=>$saturday,'sunday'=>$sunday];
         return $ret;
     }
+
+    public function new_function()
+    {
+      echo "This is new function that we can add while doing pathc";
+    }
+
 }
